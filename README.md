@@ -2,6 +2,7 @@
 
 # include a CircleCI status badge, here
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/MennyMo/udacity-microservices/tree/master.svg?style=svg)](https://app.circleci.com/pipelines/github/MennyMo/udacity-microservices?branch=master)
 
 ## Project Overview
 
