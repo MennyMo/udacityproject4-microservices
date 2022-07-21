@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="container head">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <div class="head">
+                    <h2>Sklearn Prediction Home</h2>
+                </div>
+                <div class="button">
+                    <a href="{{ url_for('predict_with_form') }}">
+                        <input value="Predict" class="btn btn-primary mybtn" type="button">
+                        </input>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Make Prediction</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-sm-12 col-md-10">
+                <label class="head">
+                    <h1>Make Prediction</h1>
+                </label>
+                <form action="" method="POST">
+                    {{ form.hidden_tag() }}
+                    <fieldset class="form-group">
+                        <div class="form-group mydiv">
+                            {{ form.CHAS.label(class="form-control-label") }}
+                            {{ form.CHAS(class="form-control") }}
+                        </div>
+                        <div class="form-group mydiv">
+                            {{ form.RM.label(class="form-control-label") }}
+                            {{ form.RM(class="form-control") }}
+                        </div>
+                        <div class="form-group mydiv">
+                            {{ form.TAX.label(class="form-control-label") }}
+                            {{ form.TAX(class="form-control") }}
+                        </div>
+                        <div class="form-group mydiv">
+                            {{ form.PTRATIO.label(class="form-control-label") }}
+                            {{ form.PTRATIO(class="form-control") }}
+                        </div>
+                        <div class="form-group mydiv">
+                            {{ form.B.label(class="form-control-label") }}
+                            {{ form.B(class="form-control") }}
+                        </div>
+                        <div class="form-group mydiv">
+                            {{ form.LSTAT.label(class="form-control-label") }}
+                            {{ form.LSTAT(class="form-control") }}
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        {{ form.submit(class="btn btn-primary mybtn") }}
+                    </div>
+                    <small><a href="home">Return Home!</a></small>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+}
+
+button.mybtn {
+	display: inline-flex;
+	margin: auto;
+	text-align: center;
+}
+
+div.head {
+	margin: 150px;
+}
+
+div.h1 {
+	text-align: center;
+}
+
+div.button {
+	display: block;
+	margin: 50px;
+}
+
+div.head {
+	display: block;
+	text-align: center;
+}
+
+label.head {
+	display: block;
+	margin: 50px;
+	text-align: center;
+}
+
+.mybtn {
+	width: 100%;
+}
